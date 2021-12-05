@@ -8,7 +8,7 @@ void fact(int n){
     for(int i=2;i<=n;i++){
         f=f*i;
     }
-    printf("%d",&f);
+    printf("%d",f);
     }
     
 }
