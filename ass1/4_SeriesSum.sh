@@ -15,6 +15,7 @@ series_sum()
   sum=0
   for(( j=0 ; j<=$n ; j++))
     do
+    #sum=`echo "scale=3; $sum+(($x ^ (2 * $j)) / `fact $(2 * j)`" |bc`
     e=`expr 2 \* $j`
     e=`fact $e`
     sum=`echo "scale = 3; $sum + ($x^(2*$j)) / $e" | bc`
