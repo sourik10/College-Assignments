@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -19,13 +18,17 @@ bool oddEven(int x){
         return 1;
     }return 0;
 }
+
 int fact(int n){
     int f=1;
+	
     for(int i=1;i<=n;i++){
         f=f*i;
     }
     return f;
 }
+
+
 int main() {
     int a,b; //take input
     printf("enter two numbers \n");
@@ -35,11 +38,8 @@ int main() {
     printf("Division = %d \n",divide(a,b));
     printf("Expresssion = %d \n",expr(a,b));
     
-    int no;
-    printf("enter a number: \n");
-    scanf("%d",&no);
-    printf("Factorial = %d \n",fact(no));
-    if(oddEven(no)){
+	printf("Factorial = %d \n",fact(b));
+    if(oddEven(b)){
         printf("Even number");
     }
     else printf("Odd number");
