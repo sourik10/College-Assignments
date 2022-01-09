@@ -1,22 +1,19 @@
-echo "Enter x and n value"
-read x n
-
-if [ $n -eq 1 ]
-then 
-  m=`expr $x \* $x `
-elif [ $n -eq 2 ]
-then 
-  m=`expr $x / $n `
-elif [ $n -eq 3 ]
-then 
-  m=`expr $x \* 2 `
+clear
+printf "Enter the value of x: "
+read x
+printf "Enter the value of n: "
+read n
+if [ $n -eq 1 ]; then
+  ans=`expr $x \* $x`
+  Y=`expr 1 + $ans`
+elif [ $n -eq 2 ]; then
+  ans=`echo "scale = 3; $x / $n" | bc`
+  Y=`echo "scale = 3; 1 + $ans" | bc`
+elif [ $n -eq 3 ]; then
+  ans=`expr 2 \* $x`
+  Y=`expr 1 + $ans`
 else
-  m=`expr $x \* $n `
-
+  ans=`expr $x \* $n`
+  Y=`expr 1 + $ans`
 fi
-y=`expr 1 + $m `
-echo "value of y(x,n) "
-echo $y
-
-
-
+echo "Y = $Y"
