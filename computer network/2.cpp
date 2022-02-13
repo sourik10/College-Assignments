@@ -7,7 +7,9 @@ using namespace std;
 int main(){
     fastread();
     
-    // Program 2- Code to find a data is given in Even Parity or Odd Parity ,to generate even parity bit
+    //Find out the parity of given Code, generate even parity bit and print new even parity number.
+    //Lab Program 2.1
+    
     string code; cin>>code;
     int ct=0;
     for(int i=0;i<code.length();i++){
