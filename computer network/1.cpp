@@ -5,9 +5,11 @@
 using namespace std;
 
 int main(){
-    fastread();
+    fastread()
+        
+    // Code to find a data is given in Even Parity or Odd Parity.
+    //Lab Program 1.
     
-    // Program 1- Code to find a data is given in Even Parity or Odd Parity
     string code; cin>>code;
     int ct=0;
     for(int i=0;i<code.length();i++){
