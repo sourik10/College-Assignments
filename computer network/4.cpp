@@ -47,36 +47,36 @@ int main(){
 
 	if(setBits % 2 == 0){
 		// Given no. is in even Parity
-		int parity_bit = 0;
+		int evenparity_bit = 0;
+        int oddparity_bit=1;
 		cout << "The given number is in Even Parity" << endl;
-		cout << "Even Parity bit is :" << parity_bit << endl;
-		v.push_back(parity_bit);
+		cout << "Even Parity bit is :" << evenparity_bit << endl;
+		v.push_back(evenparity_bit);
 		display(v);
 		cout<<endl;
 		v.pop_back();
-		cout << "Odd Parity bit is :"<<~parity_bit << endl;
-		v.push_back(~parity_bit);
+		cout << "Odd Parity bit is :"<<oddparity_bit << endl;
+		v.push_back(oddparity_bit);
 		display(v);
 		v.pop_back();
 	}
 	else{
     
 	// Given no. is in odd Parity
-		int parity_bit = 0;
+		int oddparity_bit = 0;
+        int evenparity_bit=1;
 		cout << "The given number is in Odd Parity" << endl;
-		cout << "Even Parity bit is :" << parity_bit << endl;
-		v.push_back(parity_bit);
+		cout << "Even Parity bit is :" << evenparity_bit << endl;
+		v.push_back(evenparity_bit);
 		display(v);
 		cout<<endl;
 		v.pop_back();
-		cout << "Odd Parity bit is :"<<~parity_bit << endl;
-		v.push_back(~parity_bit);
+		cout << "Odd Parity bit is :"<<oddparity_bit << endl;
+		v.push_back(oddparity_bit);
 		display(v);
 		v.pop_back();
 	}
-	}
 }
-
 
 
 /*
